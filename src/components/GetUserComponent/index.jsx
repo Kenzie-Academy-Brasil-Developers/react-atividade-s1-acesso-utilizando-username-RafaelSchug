@@ -1,4 +1,5 @@
 import { useState } from "react";
+import './style.css';
 
 const GetUserComponent = ({setIsLoggedIn, setUser}) => {
 
@@ -15,10 +16,10 @@ const GetUserComponent = ({setIsLoggedIn, setUser}) => {
     }
 
     return (
-        <form action="" onSubmit={e=> e.preventDefault()}>
+        <form onSubmit={e=> e.preventDefault()}>
             {error && <label>{error}</label>}
             <input type="text" placeholder='Nome' value={userInput} onChange={e => setUserInput(e.target.value)}/>
-            <button onClick={() => HandleLogin(userInput)}>Acessar com nome</button>
+            <button className='login' onClick={() => HandleLogin(userInput)}>Acessar com nome</button>
         </form>
     )
 }

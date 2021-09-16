@@ -1,0 +1,19 @@
+@keyframes welcome_anim {
+    0% {
+        opacity: 0;
+        transform: scale(0.2);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+.welcome {
+    animation: welcome_anim .5s 1 ease-in-out;
+}
+
+button.logout {
+    background: orangered;
+    color: white;
+}

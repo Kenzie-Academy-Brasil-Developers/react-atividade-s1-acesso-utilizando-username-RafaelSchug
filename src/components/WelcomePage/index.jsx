@@ -1,3 +1,5 @@
+import './style.css';
+
 const WelcomePage = ({user, setIsLoggedIn}) => {
 
     const handleLogout = () => {
@@ -6,8 +8,8 @@ const WelcomePage = ({user, setIsLoggedIn}) => {
 
     return (
         <div>
-            <h3>Bem vindo, {user}!</h3>
-            <button onClick={handleLogout}>Logout</button>
+            <h3 className='welcome'>Bem vindo, {user}!</h3>
+            <button className='logout' onClick={handleLogout}>Logout</button>
         </div>
     )
 }
